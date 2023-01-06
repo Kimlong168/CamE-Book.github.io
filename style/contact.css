@@ -1,0 +1,121 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+}
+
+
+.contact-wrapper{
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* gap: 2rem; */
+  padding:40px 50px;
+}
+.contact__form-container{
+  width: 80%;
+}
+.contact__form-container .contact__form-text{
+  width: 60%;
+  line-height: 25px;
+  padding:0 0 25px;
+  color: var(--black);
+}
+.contact__form-input table{
+  width: 100%;
+}
+.contact__form-input table tr td{
+ font-weight: bold;
+ padding-top: 10px;
+ padding-bottom:10px;
+}
+
+.contact__label{
+  padding: 0px 100px 0px 0;
+  width: 30%;
+}
+.contact__form-input input{
+  width: 530px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid rgb(192, 190, 190);
+  border-radius: 3px;
+  font-size: 16px;
+}
+.contact__form-input textarea{
+  padding: 10px;
+  width: 530px;
+  min-height: 100px;
+  border: 1px solid rgb(192, 190, 190);
+  border-radius: 3px;
+  font-size: 16px;
+  resize: vertical;
+}
+.contact__form-input input:focus,.contact__form-input textarea:focus{
+  outline:1px solid var(--light-redred);
+  box-shadow: 0 0 3px var(--light-red) ;
+  border: none;
+}
+.contact__btn-submit{
+  padding:10px 30px;
+  background-color: var(--light-red);
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contact__btn-submit:hover{
+  background-color: var(--red);
+}
+/* address */
+.contact__address-container .contact__box-info .contact__box-infoContent{
+  padding: 6px 0;
+}
+.contact__address-container .contact__box-info .contact__box-infoContent p{
+  font-weight: bold;
+}
+.contact__address-container .contact__box-info .contact__box-infoContent a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+/* responsive web page */
+
+@media screen and (max-width:1000px) {
+  .contact__form-input input,.contact__form-input textarea{
+    width: 100%;
+  }
+  .contact__form-container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .contact__form-container .contact__form-text{
+    width:fit-content;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .contact-wrapper{
+    padding:30px;
+  }
+  .contact__label{
+    padding: 0px 50px 0px 0;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .contact__label{
+    padding: 0px 30px 0px 0;
+  }
+}

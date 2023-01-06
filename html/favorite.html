@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wish List</title>
+    <link rel="icon" href="../image/logo-new.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../sytle.css" />
+    <link rel="stylesheet" href="../style/favorite.css" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Khmer"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- head -->
+    <header id="head">
+      <div class="head-container">
+        <!-- logo image -->
+        <div class="head-left-container">
+          <a class="head-left-logo-image-link" href="../index.html">
+            <img
+              class="head-left-logo-image"
+              src="../image/logo-new.png"
+              alt="logo-image"
+            />
+          </a>
+        </div>
+        <!-- search box -->
+        <div class="head-center-container">
+          <input
+            class="head-center-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- right icon -->
+        <div class="head-right-container">
+          <!-- user icon -->
+          <a class="head-right-icon-link" href="login.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </a>
+
+          <!-- favorite icon -->
+          <a class="head-right-icon-link" href="favorite.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
+
+          <!-- add to cart icon -->
+          <a class="head-right-icon-link" href="cart.html">
+            <div class="head-right-icon-container">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- navigation bar -->
+      <nav class="nav-container">
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="../index.html">
+          <div class="nav-content">Home</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="shop.html">
+          <div class="nav-content">Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="audioBook.html">
+          <div class="nav-content">Audio Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="podcast.html">
+          <div class="nav-content">Podcast</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="article.html">
+          <div class="nav-content">Article</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="featureAuthor.html">
+          <div class="nav-content">Featured Authors</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="about.html">
+          <div class="nav-content">About Us</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="contact.html">
+          <div class="nav-content">Contact Us</div>
+        </a>
+      </nav>
+
+      <!-- hidden menu icon and search box-->
+      <div class="nav-hidden-menu-icon-and-search-box">
+        <div class="nav-hidden-menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- hidden search box -->
+        <div class="nav-hidden-search-box-container">
+          <input
+            class="head-center-search-box nav-hidden-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon nav-hidden-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- hidden navigation bar -->
+      <nav class="hidden-nav-container">
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="../index.html">
+          <div class="hidden-nav-content">Home</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="shop.html">
+          <div class="hidden-nav-content">Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="audioBook.html">
+          <div class="hidden-nav-content">Audio Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="podcast.html">
+          <div class="hidden-nav-content">Podcast</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="article.html">
+          <div class="hidden-nav-content">Article</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="featureAuthor.html">
+          <div class="hidden-nav-content">Featured Authors</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="about.html">
+          <div class="hidden-nav-content">About Us</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="contact.html">
+          <div class="hidden-nav-content">Contact Us</div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- This is add to cart -->
+    <div class="cart__wrapper">
+      <!-- left side - cart table -->
+      <div class="cart__table">
+        <!-- cart table -->
+        <table>
+          <!-- table head -->
+          <thead>
+            <!-- table header -->
+            <tr class="cart__table-thead">
+              <td>Books</td>
+              <td>Price</td>
+              <td>Cart</td>
+            </tr>
+          </thead>
+          <!-- table body -->
+          <tbody>
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img
+                      src="../image/the-revolution-book.jfif"
+                      alt="item image"
+                    />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">The Revolution</div>
+                </div>
+              </td>
+              <!-- price -->
+              <td class="cart__table-qty">80.50 $</td>
+              <!-- add to card btn and quantity btn -->
+              <td>
+                <div class="cart__table-price">
+                  <button class="favorite__add-to-cart-btn">Add</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img
+                      src="../image/rich-dad-poor-dad-book.jpg"
+                      alt="item image"
+                    />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">Rich Dad Poor Dad</div>
+                </div>
+              </td>
+              <!-- price -->
+              <td class="cart__table-qty">190.00 $</td>
+              <!-- add to card btn and quantity btn -->
+              <td>
+                <div class="cart__table-price">
+                  <button class="favorite__add-to-cart-btn">Add</button>
+                </div>
+              </td>
+            </tr>
+
+            <!-- row of the product -->
+            <tr>
+              <td>
+                <div class="cart__table-item">
+                  <!-- item image -->
+                  <div class="item-image">
+                    <img src="../image/you-can-book.jpg" alt="item image" />
+                  </div>
+                  <!-- item name -->
+                  <div class="item-name">You Can</div>
+                </div>
+              </td>
+              <!-- price -->
+              <td class="cart__table-qty">50.60 $</td>
+              <!-- add to card btn and quantity btn -->
+              <td>
+                <div class="cart__table-price">
+                  <button class="favorite__add-to-cart-btn">Add</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- bottom button -->
+        <div class="bottom__btn-container">
+          <!--continue shopping button -->
+          <div class="shopping-btn">
+            <a href="shop.html"
+              ><button>
+                <i class="fa-solid fa-chevron-left"></i>
+                Shopping
+              </button>
+            </a>
+          </div>
+          <!-- process checkout button -->
+          <div class="checkout-btn">
+            <a href="cart.html">
+              <button>
+                <span>Go to</span> Cart
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------footer---------------->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="shop.html">Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="audioBook.html">Audio Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="podcast.html">Podcast</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="article.html">Article</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="featureAuthor.html">Featured Authors</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through spreading the education. We contribute great
+            books to everyone.
+          </p>
+          <br />
+          <p>
+            Our products are for people who passionate about self-development
+            and entertainment.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="mailto:kimlong5244@gmail.com" target="_blank"
+              >info@CamE-Book.com.kh</a
+            >
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="https://t.me/kimlong_chann" target="_blank"
+              >+1 (650) 555-0111</a
+            >
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#head">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- Javascript code -->
+    <script src="../script.js"></script>
+  </body>
+</html>

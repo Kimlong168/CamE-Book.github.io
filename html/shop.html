@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="icon" href="../image/logo-new.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sytle.css" />
+    <link rel="stylesheet" href="../style/shop.css" />
+  </head>
+  <body>
+    <!-- head -->
+    <header id="head">
+      <div class="head-container">
+        <!-- logo image -->
+        <div class="head-left-container">
+          <a class="head-left-logo-image-link" href="../index.html">
+            <img
+              class="head-left-logo-image"
+              src="../image/logo-new.png"
+              alt="logo-image"
+            />
+          </a>
+        </div>
+        <!-- search box -->
+        <div class="head-center-container">
+          <input
+            class="head-center-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- right icon -->
+        <div class="head-right-container">
+          <!-- user icon -->
+          <a class="head-right-icon-link" href="login.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </a>
+
+          <!-- favorite icon -->
+          <a class="head-right-icon-link" href="favorite.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
+
+          <!-- add to cart icon -->
+          <a class="head-right-icon-link" href="cart.html">
+            <div class="head-right-icon-container">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- navigation bar -->
+      <nav class="nav-container">
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="../index.html">
+          <div class="nav-content">Home</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="shop.html">
+          <div class="nav-content">Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="audioBook.html">
+          <div class="nav-content">Audio Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="podcast.html">
+          <div class="nav-content">Podcast</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="article.html">
+          <div class="nav-content">Article</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="featureAuthor.html">
+          <div class="nav-content">Featured Authors</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="about.html">
+          <div class="nav-content">About Us</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="contact.html">
+          <div class="nav-content">Contact Us</div>
+        </a>
+      </nav>
+
+      <!-- hidden menu icon and search box-->
+      <div class="nav-hidden-menu-icon-and-search-box">
+        <div class="nav-hidden-menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- hidden search box -->
+        <div class="nav-hidden-search-box-container">
+          <input
+            class="head-center-search-box nav-hidden-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon nav-hidden-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- hidden navigation bar -->
+      <nav class="hidden-nav-container">
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="../index.html">
+          <div class="hidden-nav-content">Home</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="shop.html">
+          <div class="hidden-nav-content">Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="audioBook.html">
+          <div class="hidden-nav-content">Audio Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="podcast.html">
+          <div class="hidden-nav-content">Podcast</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="article.html">
+          <div class="hidden-nav-content">Article</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="featureAuthor.html">
+          <div class="hidden-nav-content">Featured Authors</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="about.html">
+          <div class="hidden-nav-content">About Us</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="contact.html">
+          <div class="hidden-nav-content">Contact Us</div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- title -->
+    <h1 class="shop__page-title"></h1>
+
+    <!-- This is shop page - shop wrapper -->
+    <div class="shop-wrapper">
+      <!-- left side - price range main container -->
+      <aside class="Shop__price-range-container">
+        <!-- price range title -->
+        <div class="price-range-title">Price Range</div>
+        <!-- price range input type range -->
+        <div class="price-range-input">
+          <!-- display value of price range -->
+          <div class="price-range-number-container">
+            <span class="price-range-number">0.00 $</span>
+            <span class="price-range-number price-range-number-put"
+              >50.00 $</span
+            >
+          </div>
+          <!-- input type range -->
+          <input
+            class="input_type-range"
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+          />
+        </div>
+
+        <!-- shop advertisement -->
+        <div class="shop__advertisement">
+          <!-- image slide container -->
+          <div class="ads__slider">
+            <!-- image slide -->
+            <div class="image-slide first">
+              <img src="../image/shop-ads (3).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../image/shop-ads (2).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../image/shop-ads (1).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../image/shop-ads (4).png" alt="ads-image" />
+            </div>
+            <div class="image-slide">
+              <img src="../image/shop-ads (5).png" alt="ads-image" />
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- right side - product container -->
+      <main class="shop__product-container">
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="detail.html">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/Harry-Potter-book.webp"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">harry potter</div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">J.K. Rowling</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">90.20 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/life-amazing-secret-book.jfif"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                Life's Amazing Secrets
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">
+                Gaur Gopal Das
+              </div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">70.20 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="detail.html">
+            <div class="shop__product-box-image">
+              <img src="../image/angkor-city-book.jpg" alt="book-cover-image" />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                Ancient Angkor City of Temples
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Al Caudullo</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">110.50 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/think-and-grow-rich.jfif"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                Think and Grow Rich
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Stev Havey</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">80.00 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/the-revolution-book.jfif"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">The Revolution</div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Pann Sothy</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">80.50 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img src="../image/ishii-book-cover.png" alt="book-cover-image" />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">Ishii Shiro</div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Jenny Chan</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">50.20 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/marutas-of-unit-731-book-cover.jpg"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                Marutas of unit 731
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Jenny Chan</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">30.20 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/rich-dad-poor-dad-book.jpg"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                Rich Dad Poor Dad
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">
+                Robert T.kiyosaki
+              </div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">190.00 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/power-of-life-book.png"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">Power of Life</div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">
+                Chann Kimlong
+              </div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">125.00 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/phd-dara-book (2).png"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                How to Code Without Errors
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">PhD. Dara</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">80.20 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/unit-731-book-cover.jpg"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">Unit 731 (2nd)</div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Derek Pua</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">60.50 $</div>
+            </div>
+          </a>
+        </div>
+
+        <!--shop product box -->
+        <div class="shop__product-box">
+          <!-- product image -->
+          <a class="shop__product-box-link" href="#">
+            <div class="shop__product-box-image">
+              <img
+                src="../image/the-rape-book-cover.jfif"
+                alt="book-cover-image"
+              />
+            </div>
+            <!-- product information -->
+            <div class="shop__product-box-info">
+              <!-- book name -->
+              <div class="shop__product-box-info-book-name">
+                The Rape of Manking
+              </div>
+              <!-- author -->
+              <div class="shop__product-box-info-auhtor-name">Iris change</div>
+              <!-- price -->
+              <div class="shop__product-box-info-book-price">90.20 $</div>
+            </div>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <!-- ------------footer---------------->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="shop.html">Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="audioBook.html">Audio Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="podcast.html">Podcast</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="article.html">Article</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="featureAuthor.html">Featured Authors</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through spreading the education. We contribute great
+            books to everyone.
+          </p>
+          <br />
+          <p>
+            Our products are for people who passionate about self-development
+            and entertainment.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="mailto:kimlong5244@gmail.com" target="_blank"
+              >info@CamE-Book.com.kh</a
+            >
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="https://t.me/kimlong_chann" target="_blank"
+              >+1 (650) 555-0111</a
+            >
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#head">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- javascript code -->
+    <script>
+      // --------- ads slider
+
+      var counter = 1;
+      var check4 = 1;
+      const myInterval5 = setInterval(function () {
+        if (check4 == 1) counter++;
+        else counter--;
+
+        if (counter == 1) {
+          document.querySelector(".first").style.marginLeft = "0";
+        }
+        if (counter == 2) {
+          document.querySelector(".first").style.marginLeft = "-100%";
+        }
+        if (counter == 3) {
+          document.querySelector(".first").style.marginLeft = "-200%";
+        }
+        if (counter == 4) {
+          document.querySelector(".first").style.marginLeft = "-300%";
+        }
+        if (counter == 5) {
+          document.querySelector(".first").style.marginLeft = "-400%";
+        }
+
+        if (counter == 5) check4 = 0;
+        if (counter == 1) check4 = 1;
+      }, 3000);
+    </script>
+    <script src="../js/shop.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

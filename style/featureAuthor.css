@@ -1,0 +1,113 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+}
+
+.author__wrapper{
+  padding:2rem;
+}
+
+.author__box-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: auto;
+  gap: 3rem;
+}
+
+.author__box{
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--gray);
+}
+.author__box-image{
+  outline: 2px solid rgb(203, 200, 200);
+}
+.author__box-image:hover{
+  outline: 2px solid var(--light-red);
+}
+.author__box-image,.author__box-image img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.author__box-info-name{
+  padding:0 0 1rem;
+}
+.author__box-info-name-link{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--black);
+  font-style: italic;
+}
+
+.author__box-info-name-link:hover{
+  color: var(--light-red);
+}
+
+.aurhor__box-info-description{
+  line-height: 23px;
+  text-align: justify;
+  color: rgb(74, 74, 74);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 7; 
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+.aurhor__box-info-description-active{
+  -webkit-line-clamp:unset; 
+} 
+
+
+/* responsive */
+
+@media screen and (max-width:950px) {
+  .author__box-image,.author__box-image img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width:770px) {
+  .author__box-container{
+    grid-template-columns: repeat(1,1fr);
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .author__box{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .author__box-info-name{
+    text-align: center;
+  }
+  .author__box-info-name-link{
+    font-size: 1.2rem;
+  }
+  .aurhor__box-info-description{
+    font-size: .9rem;
+  }
+}
+@media screen and (max-width:40px){
+  .author__wrapper{
+    padding:1.6rem;
+  }
+  .author__box{
+    padding-bottom: 1.5rem;
+  }
+  .aurhor__box-info-description{
+    font-size: .8rem;
+    line-height: 20px;
+  }
+}

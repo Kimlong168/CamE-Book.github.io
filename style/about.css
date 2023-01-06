@@ -1,0 +1,138 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+}
+
+/* ------subtitle 1 and 2------- */
+.section-subtitle{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px 80px;
+  gap: 30px;
+}
+.section-subtitle-text h1{
+  font-size: 36px;
+  color: var(--light-red);
+  font-style: italic;
+}
+.section-sbutitle-text-line{
+  width: 60%;
+  height: 5px;
+  margin: 1rem 0;
+  background-color: var(--light-red);
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+.section-subtitle-text:hover .section-sbutitle-text-line{
+  width: 100%;
+}
+.section-subtitle-text p{
+  line-height: 25px;
+  text-align: justify;
+}
+.section-subtitle-text button{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.section-subtitle .section-subtitle-image img{
+  width: 450px;
+}
+
+/* ---------------member--------------- */
+.member-container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  background-color: var(--white);
+  padding:30px 150px 50px;
+  text-align: justify;
+}
+
+.member-container .member-box-container{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.member-box-container .member-image img{
+  width: 160px;
+  border-radius: 50%;
+  padding-right:20px ;
+}
+.member-description .member-name{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-style: italic;
+  color: var(--light-red);
+}
+.member-description .member-description-text{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/*--------------------------- responsive webpage --------------------------*/
+
+@media screen and (max-width:1000px) {
+  .section-subtitle{
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .member-container .member-box-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .member-box-container .member-image img{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .section-subtitle .section-subtitle-image img{
+    width: 450px;
+  }
+  .section-subtitle{
+    padding: 30px;
+  }
+  .member-container{
+    padding:30px 80px 50px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .member-container{
+    padding:30px 30px 50px;
+  }
+}
+@media screen and (max-width:730px) {
+  .member-box-container .member-image img{
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .section-subtitle .section-subtitle-image img{
+    width: 400px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+  .member-container{
+    gap: 20px;
+  }
+  .member-description .member-description-text{
+    text-align: justify;
+  }
+}

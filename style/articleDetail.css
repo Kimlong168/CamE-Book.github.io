@@ -1,0 +1,99 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+  font-family: 'khmer';
+}
+.article-detail__wrapper{
+  padding: 2rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+.article-detail__head-container{
+  padding-bottom: 2rem;
+}
+.article-detail__head-container{
+  border-bottom: .5px solid rgb(183, 179, 179);
+}
+.article-detail__head-title{
+  font-size: 2rem;
+  /* padding: 10px 0; */
+}
+
+.artcle-detail__head-date-and-authorName{
+  color: rgb(146, 143, 143);
+  font-size: .9rem;
+}
+.article-detail__original-title{
+  color: rgb(146, 143, 143);
+  font-weight: bold;
+  font-style: italic;
+}
+.aricle-detail__sharing-container{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  color: rgb(146, 143, 143);
+}
+
+.artcle-detail__sharing-button,.article-detail__sharing-title{
+  display: none;
+}
+.article-detail__sharing-social-icon-container{
+  display: flex;
+  gap: 1.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.article-detail__hero-image,.article-detail__hero-image img{
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.article-detail__body-image,.article-detail__body-image img{
+  width: 100%;
+  max-height: 450px;
+  margin: 1rem 0;
+}
+.article-detail__body-container{
+  padding-top:1rem 0;
+}
+.article-detail__body-subtitle{
+  padding: 1rem 0;
+}
+.article-detail__body-inroduction,.article-detail__body-description{
+  text-align: justify;
+  line-height: 25px;
+}
+
+
+
+/* -----------responsive webpage---------------- */
+
+@media screen and (max-width:790px) {
+  .article-detail__wrapper{
+    padding: 1rem 0;
+    width: 80%;
+  }
+  .artcle-detail__floating-sharing-button{
+    display: none;
+  }
+  .artcle-detail__sharing-button,.article-detail__sharing-title{
+    display: block;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .article-detail__wrapper{
+    width: 90%;
+  }
+}

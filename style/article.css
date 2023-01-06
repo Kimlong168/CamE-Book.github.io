@@ -1,0 +1,115 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+  font-family: 'khmer';
+}
+
+.article__container{
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.article__page-title{
+  text-align: center;
+  font-style:italic;
+  color: var(--light-red);
+  padding: .8rem 0;
+}
+.article__page-subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.article__page-subtitle-line{
+  height: 1px;
+  width: 90%;
+  background-color: var(--light-red);
+  display: inline-block;
+}
+
+/* article box */
+.article__box-container{
+  padding: 1.5rem 0;
+}
+.article__box{
+  display:  flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: .5px solid rgb(190, 186, 186);
+  padding-bottom: 1rem;
+}
+.article__box:last-child{
+  margin-bottom: 0;
+  border: none;
+}
+.article__box-image,.article__box-image img{
+  width: 245px;
+  height: 160px;
+  object-fit: cover;
+}
+.article__box-text-article-title a{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--black);
+  transition: all 1s ease;
+}
+.article__box-text-article-title a:hover{
+  color: var(--light-red);
+}
+.article__box-text-article-subtitle{
+  font-size: .8rem;
+  color: gray;
+  margin-bottom: 1rem;
+  text-overflow: ellipsis; 
+  width: 400px;
+  white-space: nowrap; 
+  overflow:hidden;
+
+}
+.article__box-text-btn button{
+  padding: 9px 13px;
+  background-color: red;
+  color: var(--white);
+  cursor: pointer;
+}
+.article__box-text-btn:hover button{
+  box-shadow: 3px 3px 0 rgb(67, 66, 66);
+}
+
+
+/* -------------responsive webpage------------------ */
+
+@media screen and (max-width:760px) {
+  .article__box-text-article-subtitle{
+    width: fit-content;
+    white-space:normal; 
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+  }
+}
+@media screen and (max-width:700px) {
+  .article__box{
+    display:  flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: .5px solid rgb(190, 186, 186);
+    padding-bottom: 1rem;
+  }
+  .article__box-image,.article__box-image img{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .article__box-image,.article__box-image img{
+    width: 100%;
+    height: 170px;
+  }
+}

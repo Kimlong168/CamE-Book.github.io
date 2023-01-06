@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Featured Author</title>
+    <link rel="icon" href="../image/logo-new.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../sytle.css" />
+    <link rel="stylesheet" href="../style/featureAuthor.css" />
+  </head>
+  <body>
+    <!-- head -->
+    <header id="head">
+      <div class="head-container">
+        <!-- logo image -->
+        <div class="head-left-container">
+          <a class="head-left-logo-image-link" href="../index.html">
+            <img
+              class="head-left-logo-image"
+              src="../image/logo-new.png"
+              alt="logo-image"
+            />
+          </a>
+        </div>
+        <!-- search box -->
+        <div class="head-center-container">
+          <input
+            class="head-center-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- right icon -->
+        <div class="head-right-container">
+          <!-- user icon -->
+          <a class="head-right-icon-link" href="login.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </a>
+
+          <!-- favorite icon -->
+          <a class="head-right-icon-link" href="favorite.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
+
+          <!-- add to cart icon -->
+          <a class="head-right-icon-link" href="cart.html">
+            <div class="head-right-icon-container">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- navigation bar -->
+      <nav class="nav-container">
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="../index.html">
+          <div class="nav-content">Home</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="shop.html">
+          <div class="nav-content">Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="audioBook.html">
+          <div class="nav-content">Audio Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="podcast.html">
+          <div class="nav-content">Podcast</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="article.html">
+          <div class="nav-content">Article</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="featureAuthor.html">
+          <div class="nav-content">Featured Authors</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="about.html">
+          <div class="nav-content">About Us</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="contact.html">
+          <div class="nav-content">Contact Us</div>
+        </a>
+      </nav>
+
+      <!-- hidden menu icon and search box-->
+      <div class="nav-hidden-menu-icon-and-search-box">
+        <div class="nav-hidden-menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- hidden search box -->
+        <div class="nav-hidden-search-box-container">
+          <input
+            class="head-center-search-box nav-hidden-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon nav-hidden-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- hidden navigation bar -->
+      <nav class="hidden-nav-container">
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="../index.html">
+          <div class="hidden-nav-content">Home</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="shop.html">
+          <div class="hidden-nav-content">Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="audioBook.html">
+          <div class="hidden-nav-content">Audio Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="podcast.html">
+          <div class="hidden-nav-content">Podcast</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="article.html">
+          <div class="hidden-nav-content">Article</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="featureAuthor.html">
+          <div class="hidden-nav-content">Featured Authors</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="about.html">
+          <div class="hidden-nav-content">About Us</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="contact.html">
+          <div class="hidden-nav-content">Contact Us</div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- title -->
+    <!-- <h1 class="shop__page-title">Featured Authors</h1> -->
+
+    <div class="author__wrapper">
+      <div class="author__box-container">
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/phnompenhcrown.fc.7/"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-6/306949311_1151244658794738_4797970716483231633_n.jpg?stp=dst-jpg_s851x315&_nc_cat=103&ccb=1-7&_nc_sid=da31f3&_nc_eui2=AeGVAmFON4Vlw7m3MoEDnzHuZZ9jDqUlp25ln2MOpSWnblUIXBK_2hKmBmBT3sE04WwWZt0A6VUoZ9S76h4g9uE-&_nc_ohc=GVLwg8pLmlAAX98aCNU&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfDmw3MxCDr1UO5TwMktQNdVCBF-GnZIUSxN4769nnao6A&oe=63BB15DB"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> Chann Kimlong </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/joebiden"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-1/271872926_356649429795360_6980448622900589886_n.jpg?stp=dst-jpg_p320x320&_nc_cat=1&ccb=1-7&_nc_sid=c6021c&_nc_eui2=AeEXFkvb0_LVPIohbBdFHvEFDiLUow_-UjoOItSjD_5SOvUTybMQ9lz2C5zAHSCundGN4KDfdZk7kgo6pvkN-kIs&_nc_ohc=HZBx9oioMNMAX-RzPhI&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfDLiGxbbX2NYrcqtRNJchweuDmW7qXj3HNgrTf1rphgEw&oe=63BAC1BC"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> Joe Biden </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/RobertKiyosaki"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t1.6435-9/186551721_328376338653920_6286326725308034688_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG2bdXtPtWgaDgF-_AE7W60hoAttv7mwmOGgC22_ubCY-JyHa-3ArYiLh506nHzK66PLXWsgcJDpHa-AjnQCR3E&_nc_ohc=0Sz-oXYL5mIAX9yF76J&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfATOMNN-c8r49fi3rxEDvcUunVFWgSd1CVTwiZUWpf8uw&oe=63DCE580"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#">
+                Robert T.kiyosaki
+              </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/JKRowling"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-6/301731419_607268380763610_2118740818247516203_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeG06mGjGUjqwR-x0UPavZaLK485yI4CXX0rjznIjgJdfQ3_OCu9lenCcJRu5NrrZ2cJOlREGrZ6ooIG5zN6ASHf&_nc_ohc=riJeVBcHoXUAX8BIGih&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfC-9UJNbLY2d5-pMTuEgAwxxvTcAf6gs79KHloSs_wFew&oe=63BB03F1"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> J.K. Rowling </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/SteveHarvey"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-6/289647513_3189462061314637_5500777205164226657_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEIrF6Q4efTyPUjWqi7aH7-kNK5UevD1huQ0rlR68PWG__Z8-ifYFKO077popT86foP-LpXZBzucAsfqtvDOtwN&_nc_ohc=DRskfmwpH3kAX-84xdb&tn=bpIX1zOA5RuoD5t6&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfDxt1OMIN0lbcI73IlBF_WCF4D3dKIUjNi82mwyP9sDkw&oe=63BB163C"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> Stev Harvey </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/BillGates"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-6/237125121_387368572754081_8106472968480350863_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH8TJrh5R6pCfAp8T1g2Kwt6gXPwPmdbkbqBc_A-Z1uRmLwxANoutbR-chT6NzvnDbaFHcwemv0rEjmV7Tm3mau&_nc_ohc=W4u6UfUKd8EAX-Caecq&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfDZAIUOp8ogA21HfhqVjGBf1HkJIFP2qqqEd5Ju4SbE_w&oe=63BA3E37"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> Bill Gates</a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/LoungUngAuthor"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t39.30808-6/302435300_484098596870051_5085216212246072610_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHoya7PB5r34BL2_7RixzUYd3kSNxMr5OR3eRI3Eyvk5GSyVeAarsEGNpiFP3RfpHFIBp_I5-domlgsPc7Z8mk0&_nc_ohc=9_TRQ3dpH-sAX8qPifC&tn=bpIX1zOA5RuoD5t6&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfCPRrp4HXIeeL2elV9FnXe2N2rcSTy9ZxYl974IQsxktA&oe=63B99476"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> Loung Ung </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+
+        <!-- author information box -->
+        <div class="author__box">
+          <!-- author image -->
+          <a
+            class="author__box-image"
+            href="https://www.facebook.com/jamesclear"
+            target="_blank"
+          >
+            <img
+              src="https://scontent.fpnh12-1.fna.fbcdn.net/v/t1.6435-9/163282422_292991798862942_7155226584829935817_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGjg8EnCFHsZVx3q3EqP_jgNWbZe7fySDA1Ztl7t_JIMMsa1DRla4_04gEJcX53dOR5-peiiyOqlfhNaDCoTjGB&_nc_ohc=IOV0go_XuSUAX8DKHhI&tn=bpIX1zOA5RuoD5t6&_nc_ht=scontent.fpnh12-1.fna&oh=00_AfCp9dxDQJp2UrBv8f4xdbMmV7VsK6khaHDYbRPtHrsaqg&oe=63DCCFFA"
+              alt="author-image"
+            />
+          </a>
+
+          <!-- author information  -->
+          <div class="author__box-info">
+            <!-- author name -->
+            <div class="author__box-info-name">
+              <a class="author__box-info-name-link" href="#"> James Clear </a>
+            </div>
+            <!-- auhtor description -->
+            <p class="aurhor__box-info-description" title="Click to read more">
+              Chann Kimlong is an Cambodian writer, best known for her book The
+              God of Small Things (1997), which won the Man Booker Prize for
+              Fiction in 1997. She was born in Shillong, Meghalaya, India. Her
+              parents were Rajib Roy, a Bengali Hindu tea plantation anager from
+              Calcutta and Mary Roy, a Malayali Syrian Christian women's rights
+              activist from Kerala. When she was two, her parents divorced, and
+              she returned with her mother and brother to Kerala. For some time,
+              the family lived with her maternal grandfather in Ooty, Tamil Nadu
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom gallery -->
+    <div class="home__bottom-gallery-container">
+      <!-- bottom gallery text -->
+      <div class="home__bottom-gallery-top">
+        <!-- gallery number -->
+        <div class="home__bottom-gallery-top-number">
+          Our Thanks go to all the Authors for their sacrifice.
+        </div>
+        <!-- gallery text -->
+        <div class="home__bottom-gallery-top-text">
+          CamE-Book is always here for the readers and book lovers.
+        </div>
+        <!-- small text -->
+        <small class="home__bottom-top-text-small">
+          we are passionate to contribute the knowledge, education and
+          inspiration through supplying great books.
+        </small>
+      </div>
+    </div>
+
+    <!-- ------------footer---------------->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="shop.html">Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="audioBook.html">Audio Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="podcast.html">Podcast</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="article.html">Article</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="featureAuthor.html">Featured Authors</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through spreading the education. We contribute great
+            books to everyone.
+          </p>
+          <br />
+          <p>
+            Our products are for people who passionate about self-development
+            and entertainment.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="mailto:kimlong5244@gmail.com" target="_blank"
+              >info@CamE-Book.com.kh</a
+            >
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="https://t.me/kimlong_chann" target="_blank"
+              >+1 (650) 555-0111</a
+            >
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#head">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- javascript code -->
+    <script src="../script.js"></script>
+    <script src="../js/featureAuthor.js"></script>
+  </body>
+</html>

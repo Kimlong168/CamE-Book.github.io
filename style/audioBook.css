@@ -1,0 +1,126 @@
+:root{
+  --white:rgb(252,252,252);
+  --red:rgb(213,25,18);
+  --light-red:rgb(244, 32, 25);
+  --blue:rgb(56,184,233);
+  --gray:rgb(174,174,174);
+  --light-gray:rgb(242,242,242);
+  --black:rgb(33,37,41);
+  font-family: 'khmer';
+}
+
+/* audio wrapper */
+
+.audio__wrapper{
+  padding: 1rem 3rem 3rem;
+}
+
+.audio__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+.audio__book-box-container{
+  display: flex;
+  gap: 2.5rem;
+  padding: 2rem 0;
+  border-bottom: 0.5px solid rgb(174, 171, 171);
+}
+
+.audio__book-box-image,.audio__book-box-image img{
+  width: 190px;
+  height: 270px;
+  border: 0.5px solid rgb(201, 198, 198);
+}
+
+.audio__book-box-info-book-title{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.audio__book-box-info-price{
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+.audio__book-box-info-normal-price{
+  text-decoration: line-through;
+  color: var(--light-red);
+  margin-right: 1.5rem;
+}
+.audio__book-box-info-free-price{
+  color: rgb(7, 189, 7);
+}
+.audio__book-box-info-discount-price{
+  color: brown;
+}
+.audio__book-box-info-recorder{
+  padding: 1rem 0;
+}
+.author-name,.sound-recorder{
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.audio__book-box-audio audio{
+  background-color: rgb(241,243,244);
+  border-radius: 10px;
+  box-shadow: 0 0 3px gray;
+  margin: 1rem 0;
+}
+
+.audio__book-box-audio audio:focus{
+  box-shadow: 0 0 3px red;
+}
+
+/* pricing */
+.audio__pricing-subscribe-btn button{
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  background-color:transparent;
+  font-weight: bold;
+  border: 1px solid var(--light-red);
+  cursor: pointer;
+}
+
+.audio__pricing-subscribe-btn button:hover{
+  color: var(--light-red);
+}
+/* ------------responsive webpage--------------- */
+
+@media screen and (max-width:1180px) {
+  .audio__container{
+    grid-template-columns: 1fr;
+  }
+  .audio__book-box-container:last-child{
+    border: none;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .audio__wrapper{
+    padding: 0rem 2rem 2rem;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .audio__book-box-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .audio__book-box-audio{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .audio__book-box-audio audio{
+    max-width: 230px;
+    margin: 0 auto;
+  }
+  
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article | Detail</title>
+    <link rel="icon" href="../image/logo-new.png" />
+    <script
+      src="https://kit.fontawesome.com/96bf2d4fc0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../sytle.css" />
+    <link rel="stylesheet" href="../style/articleDetail.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Khmer"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- head -->
+    <header id="head">
+      <div class="head-container">
+        <!-- logo image -->
+        <div class="head-left-container">
+          <a class="head-left-logo-image-link" href="../index.html">
+            <img
+              class="head-left-logo-image"
+              src="../image/logo-new.png"
+              alt="logo-image"
+            />
+          </a>
+        </div>
+        <!-- search box -->
+        <div class="head-center-container">
+          <input
+            class="head-center-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- right icon -->
+        <div class="head-right-container">
+          <!-- user icon -->
+          <a class="head-right-icon-link" href="login.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+          </a>
+
+          <!-- favorite icon -->
+          <a class="head-right-icon-link" href="favorite.html">
+            <div class="head-right-icon-container">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </a>
+
+          <!-- add to cart icon -->
+          <a class="head-right-icon-link" href="cart.html">
+            <div class="head-right-icon-container">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- navigation bar -->
+      <nav class="nav-container">
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="../index.html">
+          <div class="nav-content">Home</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="shop.html">
+          <div class="nav-content">Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="audioBook.html">
+          <div class="nav-content">Audio Book</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="podcast.html">
+          <div class="nav-content">Podcast</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="article.html">
+          <div class="nav-content">Article</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="featureAuthor.html">
+          <div class="nav-content">Featured Authors</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="about.html">
+          <div class="nav-content">About Us</div>
+        </a>
+
+        <!-- navigation content link -->
+        <a class="nav-content-link" href="contact.html">
+          <div class="nav-content">Contact Us</div>
+        </a>
+      </nav>
+
+      <!-- hidden menu icon and search box-->
+      <div class="nav-hidden-menu-icon-and-search-box">
+        <div class="nav-hidden-menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- hidden search box -->
+        <div class="nav-hidden-search-box-container">
+          <input
+            class="head-center-search-box nav-hidden-search-box"
+            type="text"
+            placeholder="Search by Title, Author or Publiser"
+          />
+          <button class="head-center-search-icon nav-hidden-search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- hidden navigation bar -->
+      <nav class="hidden-nav-container">
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="../index.html">
+          <div class="hidden-nav-content">Home</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="shop.html">
+          <div class="hidden-nav-content">Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="audioBook.html">
+          <div class="hidden-nav-content">Audio Book</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="podcast.html">
+          <div class="hidden-nav-content">Podcast</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="article.html">
+          <div class="hidden-nav-content">Article</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="featureAuthor.html">
+          <div class="hidden-nav-content">Featured Authors</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="about.html">
+          <div class="hidden-nav-content">About Us</div>
+        </a>
+
+        <!-- hidden nav content link -->
+        <a class="hidden-nav-content-link" href="contact.html">
+          <div class="hidden-nav-content">Contact Us</div>
+        </a>
+      </nav>
+    </header>
+
+    <!-- article detail -->
+    <div class="article-detail__wrapper">
+      <div class="article-detail__container">
+        <!-- article detail head -->
+        <div class="article-detail__head-container">
+          <!-- article title -->
+          <h1 class="article-detail__head-title">
+            តើ AI ពិតជាអាចជំនួសភាពវៃឆ្លាតរបស់មនុស្សបានទេ?
+          </h1>
+          <!-- date and author's name -->
+          <small class="artcle-detail__head-date-and-authorName">
+            <span class="artcle-detail__head-date">១ មករា ១៩៧០</span>
+            <span> — </span>
+            <span class="artcle-detail__head-authorName"> Chau Dara</span>
+          </small>
+        </div>
+
+        <!-- original source -->
+        <br>
+        <div class="article-detail__original-title">
+          View on original page: 
+          <a href="https://www.tfdevs.com/blog/can-ai-replace-human">TFD's article </a>
+        </div>
+
+        <!-- share button -->
+        <div class="aricle-detail__sharing-container">
+          <!-- text -->
+          <div class="article-detail__sharing-title">ចែករំលែកអត្ថបទនេះ</div>
+          <!-- social media icon -->
+          <div class="article-detail__sharing-social-icon-container">
+            <!-- AddToAny BEGIN -->
+            <div
+              class="a2a_kit a2a_kit_size_32 a2a_default_style artcle-detail__sharing-button"
+              data-a2a-url="http://127.0.0.1:5500/html/articleDetail.html"
+              data-a2a-title="CamE-Book | Article"
+              title="share this article"
+            >
+              <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+              <a class="a2a_button_facebook"></a>
+              <a class="a2a_button_pinterest"></a>
+              <a class="a2a_button_telegram"></a>
+            </div>
+            <script
+              async
+              src="https://static.addtoany.com/menu/page.js"
+            ></script>
+            <!-- AddToAny END -->
+          </div>
+        </div>
+
+        <!-- article hero image -->
+        <div class="article-detail__hero-image">
+          <img
+            src="https://www.tfdevs.com/blog/ai-cover.jpg"
+            alt="article-detail-hero-image"
+          />
+        </div>
+
+        <!-- article paragraph -->
+        <div class="article-detail__body-container">
+          <!-- intoduction -->
+          <p class="article-detail__body-inroduction">
+            <b>Artificial Intelligence </b>— renowned in short as A. I — has
+            emerged from a desire to have a form of intelligence to emulate
+            human neural capacity. With the rapidly advancing computing
+            technologies, the world has seen for the first time the dictation of
+            human’s will to machinery taking deep roots in daily activities such
+            as facial recognition, self-driving car, the humanoid robot, and so
+            on. It was a fresh atmosphere of optimism in the belief that AI will
+            be the ultimate delegation of human beings.
+          </p>
+
+          <!-- subtitle -->
+          <h2 class="article-detail__body-subtitle">
+            Can it replace human intelligence?
+          </h2>
+
+          <!-- description -->
+          <p class="article-detail__body-description">
+            Before we dive deeper into seeking the ultimate truth, we might as
+            well define what is it to be a human. Apparently, from the dawn of
+            civilization to the industrial revolution, the human level of
+            understanding has altered dramatically. The intuitive way in the
+            past to resolve problems was through the violent mean resulting in
+            humans battling against each other. But from time to time, we learn
+            to talk, understand each other, feel compassion, sympathize, and
+            feel remorse for any wrongdoing. All of those were human conscience
+            that evolved and developed to push for a better way of life.
+            However, the development wasn’t done in a generation. It took a
+            tremendous amount of time for humans to realize the objective. The
+            practice to pass experiences to the latter generation in the form of
+            inscription or written manuscript has begun what’s called The
+            Accumulative Acquisition of Knowledge which remained squarely within
+            the confinement of humans’ basis of thinking.
+          </p>
+
+          <!-- body image -->
+          <div class="article-detail__body-image">
+            <img
+              src="https://www.tfdevs.com/blog/wall-e.jpg"
+              alt="article-detail-image"
+            />
+          </div>
+
+          <!-- subtitle -->
+          <h2 class="article-detail__body-subtitle">
+            So what is Artificial Intelligence?
+          </h2>
+
+          <!-- description -->
+          <p class="article-detail__body-description">
+            The terms were pretty much self-explanatory — the intelligence
+            entity that was engineered to serve a specific purpose. It was
+            derived from the field of mathematics that formulate certain
+            procedures to model partial aspects of humans’ way of thinking that
+            will ultimately inspire how the computer would solve the problem.
+            For instance, we used to identify a bird by certain distinguishing
+            features such as feathers, a pair of wings, beaks, etc. The
+            knowledge was then inscribed and passed down through generations.
+            Transforming the knowledge from readable human text to the
+            mathematical algorithm and computing codes is widely known as
+            Programming The Intelligence. Subsequently, we got an AI that could
+            — in theory — identify birds independent of humans’ judgment.
+            However, it took years of effort and research to come up with such
+            sophisticated knowledge and experience to guide the computer to do
+            so.
+          </p>
+
+          <!-- subtitle -->
+          <h2 class="article-detail__body-subtitle">
+            Can AI exist entirely on its own?
+          </h2>
+
+          <!-- description -->
+          <p class="article-detail__body-description">
+            The idea of autonomous robots has again reinvigorated the belief in
+            the future of AI to replace human beings. Although autonomous robots
+            are trained to make decisions independent of human directives, they
+            still need human support in terms of deployment, consultation, or
+            even manual controlling. Let’s take the curiosity rover for example,
+            of course, it worked on behalf of human beings for exploration on
+            Mars. It collected data, analyzed Martian terrain, and answer the
+            ultimate question of whether there was life on the red planet.
+            However, the robot is said to be objective in that it only serves
+            some specific purposes to exist on its own. The microcontroller chip
+            inside holds only certain instructions for the corresponding events
+            that might occur and affect the robot on Mar in its lifetime. What
+            if a giant asteroid suddenly hit Mars like it hit the earth in
+            ancient times that might destroy the rover, how would the rover then
+            respond? Was it programmed to respond to such events? Can it realize
+            what’s happening and take a wise course of action? This indeed would
+            require a General-Purpose Artificial Intelligence — or put it more
+            accurately, an Artificial Human Being. We can draw the conclusion
+            that Artificial Intelligence and humans coexist in a joint effort as
+            each entity needs the other to fulfill its respective tasks.
+          </p>
+        </div>
+
+        <!-- floating sharing button -->
+        <div
+          class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style artcle-detail__floating-sharing-button"
+          style="left: 0px; top: 150px"
+          title="share this article"
+        >
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_pinterest"></a>
+          <a class="a2a_button_telegram"></a>
+          <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        </div>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+      </div>
+    </div>
+
+    <!-- ------------footer---------------->
+    <footer>
+      <!-- first box - useful link -->
+      <div class="footer__box" id="footer__firstBox">
+        <!-- title -->
+        <div class="footer__box-title">Useful Link</div>
+        <!-- useful link container -->
+        <div class="footer__usefulLink-container">
+          <div class="footer__usefulLink-box">
+            <a href="../index.html">Home</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="shop.html">Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="audioBook.html">Audio Book</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="podcast.html">Podcast</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="article.html">Article</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="featureAuthor.html">Featured Authors</a>
+          </div>
+          <div class="footer__usefulLink-box">
+            <a href="about.html">About Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- second box - about us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">About Us</div>
+        <div class="footer__box-description">
+          <p>
+            We are a team of passionate people whose goal is to improve
+            everyone's life through spreading the education. We contribute great
+            books to everyone.
+          </p>
+          <br />
+          <p>
+            Our products are for people who passionate about self-development
+            and entertainment.
+          </p>
+        </div>
+      </div>
+
+      <!-- third box - connect with us -->
+      <div class="footer__box">
+        <!-- title -->
+        <div class="footer__box-title">Connect with us</div>
+        <!-- contact infomation -->
+        <div class="footer__box-info">
+          <div class="footer__box-infoContent">
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="mailto:kimlong5244@gmail.com" target="_blank"
+              >info@CamE-Book.com.kh</a
+            >
+          </div>
+          <div class="footer__box-infoContent">
+            <a href="https://t.me/kimlong_chann" target="_blank"
+              >+1 (650) 555-0111</a
+            >
+          </div>
+        </div>
+        <!-- socail medai link -->
+        <div class="footer__box-socialMedia">
+          <!-- facebook -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </a>
+
+          <!-- twiiter -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </a>
+
+          <!-- instagram -->
+          <a href="#">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </a>
+
+          <!-- goto home page -->
+          <a href="#head">
+            <div class="footer__box-socialMedia-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      copyright <i class="fa-regular fa-copyright"></i> 2022 - All rights
+      reserved.
+    </div>
+
+    <!-- Javascript code -->
+    <script src="../script.js"></script>
+    <script src="../js/detail.js"></script>
+  </body>
+</html>
